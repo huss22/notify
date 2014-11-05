@@ -1,8 +1,3 @@
 document.addEventListener('deviceready', function () {
+    alert("now available");
 }, false);
-
-function notifyme(){
-	
-	window.plugin.notification.local.add({ message: 'Great app!' });
-
-}

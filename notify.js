@@ -1,12 +1,18 @@
-	document.addEventListener('deviceready', function () {
-		var now                  = new Date().getTime(),
+document.addEventListener('deviceready', function () {
+    notifyme();
+    alert('Device now avails cux');
+}, false);
+
+function notifyme(){
+
+	var now                  = new Date().getTime(),
 	    _30_seconds_from_now = new Date(now + 30*1000);
 
 	window.plugin.notification.local.add({
 	    id:      1,
 	    title:   'Reminder',
 	    message: 'Dont forget to make a million.',
-	    repeat:  'weekly',
+	    repeat:  'minutely',
 	    date:    _30_seconds_from_now
 	});
 
@@ -15,9 +21,9 @@
 	}, scope);
 	
 	window.plugin.notification.local.add({ message: 'Great app!' });
-
-	}, false);
 	
-window.plugin.notification.local.add({ message: 'Great app Mate!' });
+	window.plugin.notification.local.add({ message: 'Great app Mate!' });
+
+}
 
 

@@ -16,14 +16,17 @@
     //
     function onDeviceReady() {
         alert("Plugin Initialized");
-        window.plugin.notification.local.add({ message: 'Great app!' });
     }
     
-    
+    function notifyme(){
+      window.plugin.notification.local.add({ message: 'Great app!' });
+    }
 
     </script>
   </head>
   <body onload="onLoad()">
-  <div> Woah Man!</div>
+  <div> Woah Man!
+  </div>
+  <button onclick = "notifyme()">Click Me</button>
   </body>
 </html>

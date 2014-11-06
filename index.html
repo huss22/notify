@@ -17,10 +17,6 @@
     function onDeviceReady() {
         alert("Plugin Initialized");
     }
-    
-    function notifyme(){
-      window.plugin.notification.local.add({ message: 'Great app!' });
-    }
 
     </script>
   </head>
@@ -28,5 +24,10 @@
   <div> Woah Man!
   </div>
   <button onclick = "notifyme()">Click Me</button>
+  <script>
+    function notifyme(){
+      window.plugin.notification.local.add({ message: 'Great app!' });
+    }
+  </script>
   </body>
 </html>

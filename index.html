@@ -17,20 +17,9 @@
     function onDeviceReady() {
         alert("Plugin Initialized");
     }
-    </script>
-      <script>
-        function notifyme() {
-      var now                  = new Date().getTime(),
-          _60_seconds_from_now = new Date(now + 60*1000);
-
-    window.plugin.notification.local.add({
-    id:      1,
-    title:   'Reminder',
-    message: 'Dont forget to buy some flowers.',
-    repeat:  'weekly',
-    date:    now
-    });
-    alert(this function ran);
+    
+    function notifyme() {
+      window.plugin.notification.local.add({ message: 'Great app!' });
     }
     </script>
   </head>

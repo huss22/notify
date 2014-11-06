@@ -1,20 +1,25 @@
+<!DOCTYPE html>
 <html>
-<head>
-<script src = "jquery.js"></script>
-</head>
-<body>
-Notification.5
-<button onclick="notifyme()"> Works Maybe :( </button></br>
-<div id = "Write"></div>
-</body>
-<script>
-document.addEventListener('deviceready', function () {
-   $('#Write').append('something here ');
-}, false);
+  <head>
+    <title>Device Ready Example</title>
 
-function notifyme(){
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
-	$('#Write').append('something here ');
-}
-</script>
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        alert("device ready");
+    }
+
+    </script>
+  </head>
+  <body onload="onLoad()">
+  </body>
 </html>

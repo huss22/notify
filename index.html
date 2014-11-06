@@ -1,16 +1,22 @@
 <html>
 <head>
-
+<script src = "jquery.js"></script>
 </head>
 <body>
-Notification.5
-<button onclick="notifyme()"> Works Maybe :( </button>
+Notification.6
+<button onclick="notifyme()"> Works Maybe :( </button></br>
+<div id = "Write"></div>
 </body>
 <script>
-function notifyme(){
+$(document).ready(function(){
 document.addEventListener('deviceready', function () {
    alert("123");
 }, false);
+});
+
+function notifyme(){
+
+	$('#write').append('something here')''
 }
 </script>
 </html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src = "jquery.js"></script>
+</head>
+<body>
+Notification.5
+<button onclick="notifyme()"> Works Maybe :( </button></br>
+<div id = "Write"></div>
+</body>
+<script>
+document.addEventListener('deviceready', function () {
+   $('#Write').append('something here ');
+}, false);
+
+function notifyme(){
+
+	$('#Write').append('something here ');
+}
+</script>
+</html>

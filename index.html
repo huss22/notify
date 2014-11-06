@@ -3,20 +3,18 @@
 <script src = "jquery.js"></script>
 </head>
 <body>
-Notification.6
+Notification.5
 <button onclick="notifyme()"> Works Maybe :( </button></br>
 <div id = "Write"></div>
 </body>
 <script>
-$(document).ready(function(){
 document.addEventListener('deviceready', function () {
-   alert("123");
+   $('#Write').append('something here ');
 }, false);
-});
 
 function notifyme(){
 
-	$('#write').append('something here');
+	$('#Write').append('something here ');
 }
 </script>
 </html>
